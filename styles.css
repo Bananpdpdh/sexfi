@@ -1,0 +1,234 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* تصميم قائمة التنقل */
+.navbar {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links.open {
+    display: block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f0f0f0;
+}
+
+/* إعدادات رأس الصفحة */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* تنسيق حقل البحث */
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+/* ملف styles.css أو أي ملف CSS آخر */
+a {
+    text-decoration: none;
+}
+.search-container input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.height{
+height: 10px;
+
+}
+.search-container button:hover {
+    background-color: #2980b9;
+}
+
+/* تنسيق المربعات الصغيرة */
+.small-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.small-boxes .box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.small-boxes .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}/* تنسيق المربعات الصغيرة */
+.small-boxes {
+    display: flex;
+    justify-content: space-around; /* توزيع المساحة بالتساوي بين العناصر */
+    gap: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.small-boxes .box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex-grow: 1; /* السماح للمربعات بالنمو لملء المساحة المتاحة */
+    flex-basis: 200px; /* الحجم الأساسي للمربعات */
+    margin: 10px; /* إضافة هامش صغير حول المربعات */
+}
+
+/* تنسيق مقاطع الفيديو المصغرة */
+.video-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-thumbnail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+}
+
+.video-thumbnail img.thumbnail {
+    width: 100%;
+    height: 180PX;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.video-thumbnail p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+  
+ 
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #3498db;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+/* تصميم متجاوب للمربعات في صف واحد على الجوال */
+@media (max-width: 768px) {
+    .small-boxes {
+        display: flex;
+        flex-direction: row; /* تغيير الاتجاه إلى صف */
+        overflow-x: auto; /* السماح بالتمرير الأفقي */
+        white-space: nowrap; /* منع التفاف المربعات لأسطر متعددة */
+    }
+
+    .small-boxes .box {
+        flex: 0 0 auto; /* المربعات لا تتقلص ولا تتمدد */
+        width: auto; /* عرض تلقائي لكل مربع */
+        margin-right: 10px; /* إضافة هامش صغير بين المربعات */
+     }
+}
+

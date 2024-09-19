@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل مستخدم جديد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h1>تسجيل مستخدم جديد</h1>
+            <form method="post" action="register.php">
+                <div class="input-group">
+                    <label for="newUsername">اسم المستخدم:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">كلمة المرور:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <button type="submit">تسجيل</button>
+            </form>
+            <a href="login.html">لديك حساب؟ سجل الدخول</a>
+        </div>
+    </div>
+</body>
+</html>

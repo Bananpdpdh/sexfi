@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع نشر المقاطع</title>
+    <link rel="stylesheet" href="styles.css"> <!-- رابط ملف CSS -->
+    <style>
+        /* إضافة CSS لجعل الفيديو متجاوب */
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            max-width: 640px; /* يمكنك تعديل الحد الأقصى لعرض الفيديو */
+            margin: 0 auto; /* لمحاذاة الفيديو في المنتصف */
+        }
+
+        .video-thumbnail video {
+            width: 100%;
+            height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+            display: block; /* إزالة المسافات البيضاء حول الفيديو */
+        }
+    </style>
+</head>
+<body>
+    <!-- قائمة التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">شعار الموقع</a>
+            <ul class="nav-links">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">المقاطع</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+            <!-- زر القائمة للأجهزة المحمولة -->
+            <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <header>
+        <h1>مرحباً بكم في موقع سكسفاي</h1>
+    </header>
+
+    <!-- حقل البحث -->
+    <div class="search-container">
+        <input type="text" placeholder="ابحث عن المقاطع...">
+        <button>بحث</button>
+    </div>
+
+    <!-- قسم الفيديو -->
+    <div class="video-thumbnail">
+    <video src="https://cdn.sex-arebi.com/1673.mp4" alt="وصف الفيديو" class="thumbnail" controls poster="momandson.jpg">
+            <!-- النص البديل للفيديو في حالة عدم القدرة على تشغيله -->
+        </video>
+                  <p>ام تعلم ابنها القذف و تمارس الجنس مع ابنها -امهات</p>
+    </div>
+
+    <!-- سكربت الجافاسكربت -->
+    <script src="script2.js"></script> <!-- رابط ملف JavaScript -->
+</body>
+</html>
